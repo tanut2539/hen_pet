@@ -1,0 +1,17 @@
+<!--{subtemplate common/header}-->
+<head>
+<title>Pet Shop</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="source/plugin/hen_pet/template/css/style.css" type="text/css"/>
+</head>
+<body>
+<div id="nav_bar">
+<a href="plugin.php?id=hen_pet:petshop">Pet</a>
+<a href="plugin.php?id=hen_pet:mypet">My Pet</a>
+<!--{if $is_admin===true}-->
+<a href="plugin.php?id=hen_pet:admin" style="color:red;">Settings</a>
+<!--{/if}-->
+<!--{if $is_admin===true}-->
+<a href="plugin.php?id=hen_pet:admin&do=add" style="color:red;">Admin's</a>
+<!--{/if}-->	
+</div>		
